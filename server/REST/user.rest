@@ -1,0 +1,39 @@
+GET http://localhost:3001/users
+
+###
+
+POST http://localhost:3001/users/createAccount
+Content-Type: application/json
+
+{   
+    "username": "esty24599",
+    "mail": "nomail.se",
+    "password": "secret",
+    "isAdmin": false
+}
+
+###
+
+PUT http://localhost:3001/users/62614b41fde31646a7217bed
+Content-Type: application/json
+
+{
+    "username": "elin",
+    "password": "abc",
+    "isStudent": true
+}
+
+###
+
+
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{   
+    "username": "y",
+    "password": "i"
+}
+
+###
+
+DELETE http://localhost:3001/users/logout
